@@ -6,6 +6,11 @@ const PriorityController = require('./controllers/PriorityController');
 const CalcCompany = require('./controllers/CalcCompany');
 
 
+//testando aplicação
+routes.get('/',(req,res)=>{
+    return res.json("Hello World");
+});
+
 // rota para captar empresas
 routes.get('/datas', CompanyController.read);
 
