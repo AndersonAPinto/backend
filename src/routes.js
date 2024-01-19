@@ -4,11 +4,8 @@ const routes = express.Router();
 const CompanyController = require('./controllers/CompanyController');
 const PriorityController = require('./controllers/PriorityController');
 const CalcCompany = require('./controllers/CalcCompany');
-const Teste = require('./controllers/Teste');
 
 
-//testando a aplicação
-routes.get('/', Teste);
 
 // rota para captar empresas
 routes.get('/datas', CompanyController.read);
