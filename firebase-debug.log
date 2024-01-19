@@ -1,0 +1,95 @@
+[debug] [2024-01-19T22:17:40.668Z] ----------------------------------------------------------------------
+[debug] [2024-01-19T22:17:40.670Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ander\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-01-19T22:17:40.671Z] CLI Version:   13.0.3
+[debug] [2024-01-19T22:17:40.671Z] Platform:      win32
+[debug] [2024-01-19T22:17:40.671Z] Node Version:  v20.10.0
+[debug] [2024-01-19T22:17:40.671Z] Time:          Fri Jan 19 2024 19:17:40 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-01-19T22:17:40.672Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-19T22:17:40.802Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-19T22:17:40.802Z] > authorizing via signed-in user (andersonaugustopinto@gmail.com)
+[debug] [2024-01-19T22:17:40.802Z] [iam] checking project bdeletriccar for permissions ["firebase.projects.get"]
+[debug] [2024-01-19T22:17:40.804Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bdeletriccar:testIamPermissions [none]
+[debug] [2024-01-19T22:17:40.804Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bdeletriccar:testIamPermissions x-goog-quota-user=projects/bdeletriccar
+[debug] [2024-01-19T22:17:40.804Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bdeletriccar:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-19T22:17:41.775Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bdeletriccar:testIamPermissions 200
+[debug] [2024-01-19T22:17:41.775Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bdeletriccar:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-19T22:17:41.776Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bdeletriccar [none]
+[debug] [2024-01-19T22:17:42.248Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bdeletriccar 200
+[debug] [2024-01-19T22:17:42.248Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bdeletriccar {"projectId":"bdeletriccar","projectNumber":"416122213440","displayName":"BDeletricCar","name":"projects/bdeletriccar","resources":{"hostingSite":"bdeletriccar"},"state":"ACTIVE","etag":"1_8b2670b9-7a00-42ae-89f9-b4bcdf5fe91a"}
+[info] 
+[info] === Serving from 'C:\Users\ander\backend\backend'...
+[info] 
+[debug] [2024-01-19T22:17:42.256Z] defaultcredentials: writing to file C:\Users\ander\AppData\Roaming\firebase\andersonaugustopinto_gmail_com_application_default_credentials.json
+[debug] [2024-01-19T22:17:42.259Z] Setting GAC to C:\Users\ander\AppData\Roaming\firebase\andersonaugustopinto_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\ander\\AppData\\Roaming\\firebase\\andersonaugustopinto_gmail_com_application_default_credentials.json"}}
+[debug] [2024-01-19T22:17:42.260Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bdeletriccar/adminSdkConfig [none]
+[debug] [2024-01-19T22:17:42.567Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bdeletriccar/adminSdkConfig 200
+[debug] [2024-01-19T22:17:42.568Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bdeletriccar/adminSdkConfig {"projectId":"bdeletriccar","storageBucket":"bdeletriccar.appspot.com"}
+[info] i  functions: Watching "C:\Users\ander\backend\backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\ander\\backend\\backend\\functions\" for Cloud Functions..."}}
+[debug] [2024-01-19T22:17:42.583Z] Validating nodejs source
+[debug] [2024-01-19T22:17:44.799Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-19T22:17:44.800Z] Building nodejs source
+[debug] [2024-01-19T22:17:44.800Z] Failed to find version of module node: reached end of search path C:\Users\ander\backend\backend\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-19T22:17:44.803Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-19T22:17:44.808Z] Found firebase-functions binary at 'C:\Users\ander\backend\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8056
+
+[debug] [2024-01-19T22:17:45.315Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2024-01-19T22:22:30.303Z] File C:\Users\ander\backend\backend\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\ander\\backend\\backend\\functions\\package.json changed, reloading triggers"}}
+[debug] [2024-01-19T22:22:31.305Z] Validating nodejs source
+[debug] [2024-01-19T22:22:32.625Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-19T22:22:32.626Z] Building nodejs source
+[debug] [2024-01-19T22:22:32.626Z] Failed to find version of module node: reached end of search path C:\Users\ander\backend\backend\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-01-19T22:22:32.627Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-19T22:22:32.631Z] Found firebase-functions binary at 'C:\Users\ander\backend\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8786
+
+[debug] [2024-01-19T22:22:33.078Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
